@@ -6,6 +6,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <title>ImanWP</title>
   </head>
@@ -35,12 +36,13 @@
         </div>
       </div>
     </nav>
+
     <!-- End:navbar -->
 
     <!-- Begin:Jumbotron -->
     <section class="jumbotron text-center pt-5" id="home">
       <br /><br />
-      <img src="photo.jpeg" alt="Imanuel Crucifixio" width="200" class="rounded-circle img-thumbnail" />
+      <img src="photo.jpeg" alt="Imanuel Crucifixio" width="200" class="rounded-circle img-thumbnail" id="photo" />
       <h1 class="display-4">Imanuel Crucifixio</h1>
       <p class="lead">Web Developer</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -57,18 +59,18 @@
     <section id="about">
       <div class="container">
         <div class="row mb-3">
-          <div class="col text-center">
+          <div class="col text-center" data-aos="fade-in" data-aos-offset="500">
             <h2>About</h2>
           </div>
         </div>
         <div class="row justify-content-center text-center fs-5">
-          <div class="col-md-5 mb-3">
+          <div class="col-md-5 mb-3" data-aos="fade-right" data-aos-offset="500">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ex vitae minima ut natus voluptas placeat ab eius nam, aspernatur voluptatibus labore rerum illum harum similique possimus, in dolores explicabo. Rerum quod
               provident quis blanditiis nobis modi deleniti recusandae iste tempore odit, numquam nam. Quis recusandae nisi soluta quo harum?
             </p>
           </div>
-          <div class="col-md-5 mb-3">
+          <div class="col-md-5 mb-3" data-aos="fade-left" data-aos-offset="500">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium vel iure, beatae aspernatur eius, error alias, at aperiam a odit facere qui libero sequi distinctio! Voluptate harum amet pariatur? Harum minima
               deserunt assumenda porro laboriosam, voluptates obcaecati voluptate excepturi.
@@ -89,12 +91,12 @@
     <!-- Begin:project -->
     <section id="projects">
       <div class="container">
-        <div class="row mb-3">
+        <div class="row mb-3" data-aos="fade-in" data-aos-offset="500">
           <div class="col text-center">
             <h2>Projects</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="zoom-in-down" data-aos-offset="400">
           <div class="col-md-4 mb-4">
             <div class="card shadow border-0">
               <img src="https://source.unsplash.com/600x400?mechanical+keyboard" class="card-img-top" alt="Projects" />
@@ -147,6 +149,36 @@
     </section>
     <!-- End:project -->
 
+    <!-- begin:gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col text-center">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card border-0 item shadow-sm">
+              <img src="images/laptop1.png" class="card-img p-4" alt="Laptop" style="z-index: 99" />
+              <div class="card-img-overlay text-center mt-auto">
+                <h1 class="card-title">Asus Vivobook</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 item shadow-sm">
+              <img src="images/laptop2.png" class="card-img p-4" alt="Laptop" style="z-index: 99" />
+              <div class="card-img-overlay text-center mt-auto">
+                <h1 class="card-title">Asus Vivobook</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end:gallery -->
+
     <!-- begin:contact -->
     <section id="contact">
       <div class="container">
@@ -171,27 +203,47 @@
                 <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
               </div>
               <div class="text-center">
-                <button class="btn btn-danger w-75">Send</button>
+                <button class="btn btn-danger w-50">Send</button>
               </div>
             </form>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#dc3545"
-          fill-opacity="1"
-          d="M0,128L34.3,122.7C68.6,117,137,107,206,112C274.3,117,343,139,411,138.7C480,139,549,117,617,133.3C685.7,149,754,203,823,229.3C891.4,256,960,256,1029,234.7C1097.1,213,1166,171,1234,144C1302.9,117,1371,107,1406,101.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- end:contact -->
 
     <!-- begin:footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#dc3545"
+        fill-opacity="1"
+        d="M0,128L34.3,122.7C68.6,117,137,107,206,112C274.3,117,343,139,411,138.7C480,139,549,117,617,133.3C685.7,149,754,203,823,229.3C891.4,256,960,256,1029,234.7C1097.1,213,1166,171,1234,144C1302.9,117,1371,107,1406,101.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+      ></path>
+    </svg>
     <footer class="bg-danger text-white text-center pb-3">
       <p>Created with <i class="bi bi-suit-heart-fill"></i> by <span class="fw-bold">Imanuel Crucifixio</span></p>
     </footer>
     <!-- end:footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+
+      gsap.registerPlugin(TextPlugin);
+      gsap.from("#photo", { duration: 1, y: -100, opacity: 0 });
+      gsap.to(".lead", { duration: 3, delay: 1, text: "Web Developer" });
+
+      VanillaTilt.init(document.querySelectorAll(".item"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
   </body>
 </html>

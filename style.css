@@ -13,3 +13,34 @@ section {
 body {
   position: relative;
 }
+
+.kotak {
+  width: 200px;
+  height: 200px;
+  background-color: indianred;
+}
+
+.item {
+  transform-style: preserve-3d;
+  background-color: #ffdbde;
+}
+
+.item img {
+  transition: 0.5s;
+  transform: translate3d(0, 0, 0);
+}
+
+.item .card-img-overlay {
+  transform: translate3d(0, 0, 0px);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.item:hover img {
+  transform: scale(1.2) translate3d(0, 0, 75px);
+}
+
+.item:hover .card-img-overlay {
+  transform: translate3d(0, 0, 100px) scale(1.2);
+  opacity: 1;
+}
